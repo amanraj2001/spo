@@ -1,0 +1,16 @@
+<p>artist works!</p>
+
+<div class="container d-flex gap-3">
+  <div *ngFor="let item of artistdata;let i = index">
+
+    <div class="card" style="width: 20rem;">
+      <img src="{{item.image}}" class="card-img-top" alt="..." style="height: 10em;">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">{{item.desc}}</p>
+        <a [routerLink]="['/songs',item.id]" class="btn btn-primary">Song List</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->

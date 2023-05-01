@@ -1,0 +1,12 @@
+<p>login works!</p>
+
+<div class="container">
+  <form [formGroup]="form">
+    <label for="">Username</label>
+    <input type="text" formControlName="username" class="form-control" placeholder="admin">
+    <label for=""> Password</label>
+    <input type="text" formControlName="password" class="form-control" placeholder="password">
+    <button class="btn btn-primary " (click)="log()">Login</button>
+  </form>
+  <!-- {{form.value|json}} -->
+</div>
